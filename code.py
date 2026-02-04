@@ -8,6 +8,15 @@ print("connecting... or maybe already connected....")
 #                  password=os.getenv('CIRCUITPY_WIFI_PASSWORD'))
 print("my IP addr:", wifi.radio.ipv4_address)
 
+networks = []
+for network in wifi.radio.start_scanning_networks():
+    networks.append(network)
+wifi.radio.stop_scanning_networks()
+networks = sorted(networks, key=lambda net: net.rssi, reverse=True)
+for network in networks:
+    print("ssid:",network.ssid, "rssi:",network.rssi)
+    sleep(1)
+
 import adafruit_connection_manager
 import adafruit_requests
 
