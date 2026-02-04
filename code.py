@@ -39,4 +39,4 @@ requests = adafruit_requests.Session(pool, ssl_context)
 response = requests.get("http://wifitest.adafruit.com/testwifi/index.html")
 
 # Do something with response
-print(response)
+print(response.text)
