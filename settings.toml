@@ -1,3 +1,14 @@
 # settings.toml
 CIRCUITPY_WIFI_SSID = "DEADEND2"
 CIRCUITPY_WIFI_PASSWORD = "DEADBEEF"
+
+aio_username = "nobodyinparticular"
+aio_key = "5ae65b8fcc124a0d976ef0ba4fb55a62"
+
+
+# generator board was built with upside-down display
+# 	use documented env var not otherwise applicable
+# 	to Adafruit ESP32-S3 Reverse TFT
+#	https://docs.circuitpython.org/en/latest/docs/environment.html
+CIRCUITPY_DISPLAY_ROTATION = 180
+
