@@ -12,9 +12,14 @@ print("connecting... or maybe already connected....")
 #                  password=os.getenv('CIRCUITPY_WIFI_PASSWORD'))
 print("my IP addr:", wifi.radio.ipv4_address)
 
+print("Scanning wifi...")
+sleep(1)
 networks = []
 for network in wifi.radio.start_scanning_networks():
     networks.append(network)
+    print(f"{len(networks)} network(s)")
+    sleep(1)
+    
 wifi.radio.stop_scanning_networks()
 networks = sorted(networks, key=lambda net: net.rssi, reverse=True)
 for network in networks:
