@@ -40,3 +40,4 @@ response = requests.get("http://wifitest.adafruit.com/testwifi/index.html")
 
 # Do something with response
 print(response.text)
+
