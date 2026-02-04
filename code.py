@@ -8,4 +8,4 @@ print("connecting... or maybe already connected....")
 #                  password=os.getenv('CIRCUITPY_WIFI_PASSWORD'))
 print("my IP addr:", wifi.radio.ipv4_address)
 
-print("all done")
+print("hello, world")
