@@ -1,5 +1,9 @@
 # code.py
-import os, time, wifi
+import os, wifi
+
+from time import sleep
+
+
 print("SSID: " + os.getenv('CIRCUITPY_WIFI_SSID') )
 print("Password: " + os.getenv('CIRCUITPY_WIFI_PASSWORD') )
 
