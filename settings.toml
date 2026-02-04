@@ -12,3 +12,7 @@ aio_key = "5ae65b8fcc124a0d976ef0ba4fb55a62"
 #	https://docs.circuitpython.org/en/latest/docs/environment.html
 CIRCUITPY_DISPLAY_ROTATION = 180
 
+
+# Adafruit ESP32-S3 Reverse TFT #1 with pins, for generator 
+  # MAC:64:E8:33:74:BC:98
+  # UID:468E3347CB89
