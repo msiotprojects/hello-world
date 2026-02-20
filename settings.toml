@@ -1,9 +1,28 @@
 # settings.toml
-CIRCUITPY_WIFI_SSID = "DEADEND2"
-CIRCUITPY_WIFI_PASSWORD = "DEADBEEF"
 
-aio_username = "nobodyinparticular"
-aio_key = "5ae65b8fcc124a0d976ef0ba4fb55a62"
+# WIFI SSID and Password starting with "CIRCUITPY_"
+# cause CircuitPython (by default) to perform a WIFI auto-connect on restart .
+# We may want to connect at a specific time, 
+# so we also allow for a similar SSID/password pair which will not auto-connect.
+#   CIRCUITPY_WIFI_SSID = "SSID"
+#   CIRCUITPY_WIFI_PASSWORD = "PASSWORD_FOR_SSID"
+
+WIFI_SSID = "DEADEND2"
+WIFI_PASSWORD = "DEADBEEF"
+
+# GetHub repo and and special access for this project
+GETHUB_REPO_NAME = "circuitpython-ota-updater"
+GETHUB_REPO_OWNER = "msiotprojects"
+GETHUB_ACCESS_TOKEN = ""
+# Use GETHUB_DEFAULT_BRANCH only when it is not "main"
+#   "master" was common, but is now deprecated
+# GETHUB_DEFAULT_BRANCH = "master"
+
+# We might make use of Adafruit.io for OTA in some way
+# if we find that to be useful later (perhaps for logging),
+# so we will keep this here for reference
+AIO_USERNAME = "nobodyinparticular"
+AIO_KEY      = "5ae65b8fcc124a0d976ef0ba4fb55a62"
 
 
 # generator board was built with upside-down display
@@ -13,6 +32,8 @@ aio_key = "5ae65b8fcc124a0d976ef0ba4fb55a62"
 CIRCUITPY_DISPLAY_ROTATION = 180
 
 
+# Known boards:
 # Adafruit ESP32-S3 Reverse TFT #1 with pins, for generator 
   # MAC:64:E8:33:74:BC:98
   # UID:468E3347CB89
+
