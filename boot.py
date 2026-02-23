@@ -42,7 +42,8 @@ switchD2.direction = digitalio.Direction.INPUT
 if (switchD2.value) :
   storage.remount("/", readonly=True)
   print("D2 is pressed, host has write access to USB drive")
-else
+else:
   storage.remount("/", readonly=False)
   print("D2 NOT pressed, App code can update the USB drive")
+
 
