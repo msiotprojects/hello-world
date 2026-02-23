@@ -19,7 +19,7 @@ class OTAUpdater:
                          main_dir='app',     # most client FW should like filesystem/<main_dir/>mycode.py
                          module='',          # used when client FW is in filesystem/<module/>main_dir/mycode.py
                          new_version_dir='next',         # download firware into filesystem/new_version_dir
-                         new_version_file='.version'     # name of file containing current or available version
+                         new_version_file='.version',    # name of file containing current or available version
                                                         
                          secrets_file="settings.toml",    # expect this at filesystem/<secrets_file>
                  
