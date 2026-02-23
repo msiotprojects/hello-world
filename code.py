@@ -30,7 +30,7 @@ def connectToWifiAndUpdate():
     OTAupdate._using_network(settings["wifi_ssid"], settings["wifi_password"))
     
     # Micropython OTAUpdater passed ( 'https://github.com/owner_name/repo_name', main_dir='app', secrets_file="secrets.py")
-    otaUpdater = OTAUpdater(settings = settings, github_repo = None)
+    otaUpdater = OTAUpdater(settings = settings, main_dir='tst')
     
     hasUpdated = otaUpdater.install_update_if_available()
     if hasUpdated:
