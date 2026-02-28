@@ -10,4 +10,4 @@ print("version file contains: " + version)
 sleep(5)
 
 import app.subdir.subdir
-print("subdir contains : " + subdir.subdir_var) 
+print("subdir contains : " + app.subdir.subdir_var) 
