@@ -1,3 +1,4 @@
 
 print("Hello World!")
-print('Version 0 installed using USB') 
+import subdir.subdir
+print("subdir contains : " + subdir.subdir_var) 
