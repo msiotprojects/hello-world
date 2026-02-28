@@ -33,7 +33,8 @@ def connectToWifiAndUpdate():
 
     hasUpdated = otaUpdater.install_update_if_available()
     if hasUpdated:
-        machine.reset()
+        import microcontroller
+        microcontroller.reset()    # was machine.reset() in micropython
     else:
         del(otaUpdater)
         gc.collect()
