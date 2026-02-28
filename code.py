@@ -34,6 +34,8 @@ def connectToWifiAndUpdate():
     hasUpdated = otaUpdater.install_update_if_available()
     if hasUpdated:
         import microcontroller
+        print("Resetting in 20 seconds...")
+        sleep(20)
         microcontroller.reset()    # was machine.reset() in micropython
     else:
         del(otaUpdater)
